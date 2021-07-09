@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import CharacterItem from './CharacterItem';
 
 const CharacterGrid = (props) => {
 
@@ -9,7 +10,7 @@ const CharacterGrid = (props) => {
 
             items.map(
 
-                (item) => (<h1 key={item.char_id} >{item.name}</h1>)
+                (item) => (<CharacterItem key={item.char_id} item={item} />)
 
             )
 
